@@ -1,0 +1,15 @@
+{
+  "name": "nawah-devbot",
+  "version": "1.0.0",
+  "description": "Nawah DevBot - automated GitHub and Telegram bot for Nawah project",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^20.0.0",
+    "dotenv": "^16.0.0",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
