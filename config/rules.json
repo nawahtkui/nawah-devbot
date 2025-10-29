@@ -1,6 +1,7 @@
 {
   "reviewRules": {
     "eslint": true,
-    "solidityScan": true
+    "solhint": true,
+    "securityScan": true
   }
 }
