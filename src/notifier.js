@@ -8,5 +8,9 @@ const bot = new TelegramBot(token);
 
 export async function sendNotification(message) {
   console.log("📣 Sending Telegram notification...");
-  await bot.sendMessage(chatId, message);
+  try {
+    await bot.sendMessage(chatId, message);
+  } catch (err) {
+    console.error("⚠️ Failed to send Telegram message:", err);
+  }
 }
