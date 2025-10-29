@@ -6,10 +6,15 @@ import { sendNotification } from './notifier.js';
 async function runBot() {
   console.log("🤖 Nawah DevBot started...");
 
-  await handleReview();
-  await autoMerge();
-  await createRelease();
-  await sendNotification("Nawah DevBot: عملية تلقائية اكتملت ✅");
+  try {
+    await handleReview();
+    await autoMerge();
+    await createRelease();
+    await sendNotification("✅ Nawah DevBot: العملية التلقائية اكتملت بنجاح");
+  } catch (err) {
+    console.error("⚠️ خطأ أثناء تشغيل البوت:", err);
+    await sendNotification(`⚠️ Nawah DevBot: حدث خطأ - ${err.message}`);
+  }
 }
 
 runBot();
