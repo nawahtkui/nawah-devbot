@@ -1,14 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  direction: rtl;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #2980B9;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 h1, h2, h3 {
-    color: #2C3E50;
+  color: #2C3E50;
 }
 
-a {
-    color: #2980B9;
-    text-decoration: none;
+footer {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
 }
