@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nawah DevBot Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header>
+    <h1>📊 لوحة تحكم نواة ديف بوت</h1>
+    <nav>
+      <a href="index.html">🏠 الصفحة الرئيسية</a>
+      <a href="api.html">📘 توثيق الـ API</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="status-section">
+      <h2>🔎 حالة المستودع</h2>
+      <div id="repo-status">جارٍ التحميل...</div>
+    </section>
+
+    <section id="release-section">
+      <h2>🚀 آخر إصدار</h2>
+      <div id="latest-release">جارٍ التحميل...</div>
+    </section>
+
+    <section id="merge-section">
+      <h2>🔀 آخر عملية دمج</h2>
+      <div id="last-merge">جارٍ التحميل...</div>
+    </section>
+
+    <section id="telegram-section">
+      <h2>📨 إشعار تيليجرام</h2>
+      <button id="send-notify">إرسال إشعار اختبار</button>
+      <p id="notify-result"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 مشروع نواة | Nawah Project</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
