@@ -1,4 +1,4 @@
-// مثال: عرض آخر الأحداث من ملف logs/devbot.log
+// مثال: تحميل وعرض سجل الأحداث للبوت
 fetch('/logs/devbot.log')
   .then(res => res.text())
   .then(data => {
