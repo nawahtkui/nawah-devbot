@@ -1,16 +1,27 @@
 import { octokit } from './github.js';
+import fs from 'fs';
+import { repositories } from '../config/repositories.json';
 
 export async function autoMerge() {
   console.log("🔀 Checking PRs for auto-merge...");
 
-  // مثال بسيط: دمج PR رقم 1 بعد اجتياز الشروط
-  const owner = "nawahtkui";
-  const repo = "nawah-core";
-  const pull_number = 1;
+  for (const repoFull of repositories) {
+    const [owner, repo] = repoFull.split("/");
 
-  await octokit.pulls.merge({
-    owner,
-    repo,
-    pull_number
-  }).catch(() => console.log("⚠️ PR لم يتم دمجه (قد يكون مغلقاً أو غير جاهز)"));
+    const { data: prs } = await octokit.pulls.list({ owner, repo, state: "open" });
+
+    for (const pr of prs) {
+      try {
+        await octokit.pulls.merge({ owner, repo, pull_number: pr.number });
+        logEvent(`PR #${pr.number} merged in ${repoFull}`);
+      } catch {
+        logEvent(`PR #${pr.number} could not be merged in ${repoFull}`);
+      }
+    }
+  }
+}
+
+function logEvent(message) {
+  const log = `[${new Date().toISOString()}] ${message}\n`;
+  fs.appendFileSync("logs/devbot.log", log);
 }
