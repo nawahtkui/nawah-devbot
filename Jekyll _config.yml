@@ -1,0 +1,6 @@
+title: Nawah DevBot
+description: موقع وثائق تفاعلية لبوت Nawah DevBot
+baseurl: ""
+url: "https://nawahtkui.github.io/nawah-devbot"
+theme: minima
+markdown: kramdown
