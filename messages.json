@@ -1,0 +1,10 @@
+{
+    "en": {
+        "welcome": "Welcome to Nawah DevBot!\n- Empowering youth and women in digital economy.\n- Explore and test USNT project features.\n- Use /kyc to register.",
+        "kyc_prompt": "Please enter your full name and ID for KYC verification:"
+    },
+    "ar": {
+        "welcome": "مرحبًا بك في Nawah DevBot!\n- تمكين الشباب والمرأة في الاقتصاد الرقمي.\n- استكشف واختبر ميزات مشروع USNT.\n- استخدم /kyc للتسجيل.",
+        "kyc_prompt": "يرجى إدخال اسمك الكامل ورقم هويتك للتحقق:"
+    }
+}
