@@ -1,46 +1,35 @@
-name: Nawah DevBot Deployment
+name: Build & Deploy Nawah DevBot Pages
 
 on:
   push:
     branches:
-      - devbot-kyc
-  workflow_dispatch:
+      - main  # الفرع الذي يتم النشر منه
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ استنساخ المستودع
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      # 2️⃣ إعداد بايثون
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      # إعداد Node.js إذا تحتاجه لموقع Pages
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: 3.10
+          node-version: 20
 
-      # 3️⃣ تثبيت المكتبات المطلوبة
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: npm install || echo "No dependencies to install"
 
-      # 4️⃣ تشغيل سكربت النشر
-      - name: Run deployment script
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
-          RPC_URL: ${{ secrets.RPC_URL }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python3 scripts/deploy_contracts.py
+      # رفع الملفات كمخزن Artifact
+      - name: Upload Pages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages
+          path: ./pages
 
-      # 5️⃣ (اختياري) إرسال رسالة ترحيب/تأكيد في Telegram بعد النشر
-      - name: Notify Telegram
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-        run: |
-          python3 scripts/notify_telegram.py "Nawah DevBot deployment completed successfully!"
-
+      # النشر على GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
