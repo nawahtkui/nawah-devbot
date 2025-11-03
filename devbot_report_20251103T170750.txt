@@ -1,0 +1,191 @@
+=== DevBot Report 2025-11-02T23:55:20.663896 UTC ===
+
+--- Processing /data/data/com.termux/files/home/nawah-contracts ---
+Uncommitted changes detected -> auto-commit
+git pull error: Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Connection closed by 140.82.121.3 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Running release_only.sh (if present)
+release_only.sh error: From github.com:nawahtkui/NAWAH
+ * branch              main       -> FETCH_HEAD
+warning: adding embedded git repository: .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint: 	git submodule add <url> .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint: 	git rm --cached .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
+hint:
+hint: See "git help submodule" for more information.
+hint: Disable this message with "git config set advice.addEmbeddedRepo false"
+warning: adding embedded git repository: .nvm
+warning: adding embedded git repository: Nawah-Wallet-
+error: 'contracts/NawahProject/' does not have a commit checked out
+fatal: adding files failed
+Created and pushed tag: v1.0.3
+
+--- Processing /data/data/com.termux/files/home/nawah-nft-test ---
+No uncommitted changes
+Pulled latest changes from origin/main
+Running release_only.sh (if present)
+release_only.sh error: From github.com:nawahtkui/nawah-nft-test
+ * branch            main       -> FETCH_HEAD
+fatal: tag 'v0.0.4' already exists
+Created and pushed tag: v0.0.5
+
+--- Processing /data/data/com.termux/files/home/nawah-devbot ---
+Uncommitted changes detected -> auto-commit
+Pulled latest changes from origin/main
+Running release_only.sh (if present)
+release_only.sh error: /data/data/com.termux/files/usr/bin/sh: 1: ./release_only.sh: Permission denied
+Created and pushed tag: v0.0.3
+
+--- Processing /data/data/com.termux/files/home/nawah-wallet-pro ---
+No uncommitted changes
+Pulled latest changes from origin/main
+Running release_only.sh (if present)
+release_only.sh error: /data/data/com.termux/files/usr/bin/sh: 1: ./release_only.sh: Permission denied
+Created and pushed tag: v0.0.3
+
+--- Processing /data/data/com.termux/files/home/nawah-webhook ---
+Created missing file: release_only.sh
+Created missing folder: .github/workflows
+Created default workflow: release_only.yml
+Uncommitted changes detected -> auto-commit
+git pull error: remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/nawahtkui/nawah-webhook.git/'
+Running release_only.sh (if present)
+release_only.sh executed
+Failed to push tag v2025.11.03.003057: remote: Invalid username or token. Password authentication is not supported for Git operations.
+fatal: Authentication failed for 'https://github.com/nawahtkui/nawah-webhook.git/'
+
+--- Processing /data/data/com.termux/files/home/nawah-ui ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-ui
+
+--- Processing /data/data/com.termux/files/home/nawah-dex ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-dex
+
+--- Processing /data/data/com.termux/files/home/nawah-staking ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-staking
+
+--- Processing /data/data/com.termux/files/home/nawah-nft-market ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-nft-market
+
+--- Processing /data/data/com.termux/files/home/nawah-faucet ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-faucet
+
+--- Processing /data/data/com.termux/files/home/nawah-bridge ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-bridge
+
+--- Processing /data/data/com.termux/files/home/nawah-analytics ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-analytics
+
+--- Processing /data/data/com.termux/files/home/nawah-launchpad ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-launchpad
+
+--- Processing /data/data/com.termux/files/home/nawah-farming ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-farming
+
+--- Processing /data/data/com.termux/files/home/nawah-docs ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-docs
+
+--- Processing /data/data/com.termux/files/home/nawah-game ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-game
+
+--- Processing /data/data/com.termux/files/home/nawah-erc20 ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-erc20
+
+--- Processing /data/data/com.termux/files/home/nawah-erc721 ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-erc721
+
+--- Processing /data/data/com.termux/files/home/nawah-erc1155 ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-erc1155
+
+--- Processing /data/data/com.termux/files/home/nawah-api ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-api
+
+--- Processing /data/data/com.termux/files/home/nawah-bot ---
+Created missing file: release_only.sh
+Created missing folder: .github/workflows
+Created default workflow: release_only.yml
+Uncommitted changes detected -> auto-commit
+git pull error: Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Running release_only.sh (if present)
+release_only.sh executed
+Created and pushed tag: v1.0.4
+
+--- Processing /data/data/com.termux/files/home/nawah-dashboard ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-dashboard
+
+--- Processing /data/data/com.termux/files/home/nawah-frontend ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-frontend
+
+--- Processing /data/data/com.termux/files/home/nawah-backend ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-backend
+
+--- Processing /data/data/com.termux/files/home/nawah-smartcontracts ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-smartcontracts
+
+--- Processing /data/data/com.termux/files/home/nawah-nft-generator ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-nft-generator
+
+--- Processing /data/data/com.termux/files/home/nawah-tokenomics ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-tokenomics
+
+--- Processing /data/data/com.termux/files/home/nawah-defi ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-defi
+
+--- Processing /data/data/com.termux/files/home/nawah-liquidity ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-liquidity
+
+--- Processing /data/data/com.termux/files/home/nawah-ico ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-ico
+
+--- Processing /data/data/com.termux/files/home/nawah-payments ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-payments
+
+--- Processing /data/data/com.termux/files/home/nawah-tools ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-tools
+
+--- Processing /data/data/com.termux/files/home/nawah-marketplace ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-marketplace
+
+--- Processing /data/data/com.termux/files/home/nawah-support ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-support
+
+--- Processing /data/data/com.termux/files/home/nawah-automation ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-automation
+
+--- Processing /data/data/com.termux/files/home/nawah-explorer ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-explorer
+
+--- Processing /data/data/com.termux/files/home/nawah-scripts ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-scripts
+
+--- Processing /data/data/com.termux/files/home/nawah-test ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-test
+
+--- Processing /data/data/com.termux/files/home/nawah-tutorials ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-tutorials
+
+--- Processing /data/data/com.termux/files/home/nawah-docs-legacy ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-docs-legacy
+
+--- Processing /data/data/com.termux/files/home/nawah-integration ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-integration
+
+--- Processing /data/data/com.termux/files/home/nawah-infra ---
+ERROR: path not found: /data/data/com.termux/files/home/nawah-infra
+

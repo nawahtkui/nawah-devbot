@@ -1,43 +1,44 @@
-=== DevBot Report 2025-11-02T23:55:20.663896 UTC ===
+DevBot run: 2025-11-03T17:07:50.216862+00:00 UTC
+known_host: True - github.com already in known_hosts
 
---- Processing /data/data/com.termux/files/home/nawah-contracts ---
-Uncommitted changes detected -> auto-commit
-git pull error: Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
-Connection closed by 140.82.121.3 port 22
-fatal: Could not read from remote repository.
+--- 2025-11-03T17:07:50.217482+00:00 Processing /data/data/com.termux/files/home/nawah-contracts ---
+Uncommitted changes found -> attempting auto-commit
+git pull error (may need manual resolution): error: cannot pull with rebase: You have unstaged changes.
+error: Please commit or stash them.
+Running release_only.sh
+release_only.sh failed: From github.com:nawahtkui/NAWAH
+ * branch                main       -> FETCH_HEAD
+fatal: Unable to create '/data/data/com.termux/files/home/.git/index.lock': File exists.
 
-Please make sure you have the correct access rights
-and the repository exists.
-Running release_only.sh (if present)
-release_only.sh error: From github.com:nawahtkui/NAWAH
- * branch              main       -> FETCH_HEAD
-warning: adding embedded git repository: .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
-hint: You've added another git repository inside your current repository.
-hint: Clones of the outer repository will not contain the contents of
-hint: the embedded repository and will not know how to obtain it.
-hint: If you meant to add a submodule, use:
-hint:
-hint: 	git submodule add <url> .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
-hint:
-hint: If you added this path by mistake, you can remove it from the
-hint: index with:
-hint:
-hint: 	git rm --cached .cache/yarn/v6/.tmp/c8a1082f4d0cf2d24e10ae2d0b9c32e3
-hint:
-hint: See "git help submodule" for more information.
-hint: Disable this message with "git config set advice.addEmbeddedRepo false"
-warning: adding embedded git repository: .nvm
-warning: adding embedded git repository: Nawah-Wallet-
-error: 'contracts/NawahProject/' does not have a commit checked out
-fatal: adding files failed
-Created and pushed tag: v1.0.3
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+Created & pushed tag: v1.0.5
+Finished /data/data/com.termux/files/home/nawah-contracts
 
---- Processing /data/data/com.termux/files/home/nawah-nft-test ---
+--- 2025-11-03T17:08:03.702259+00:00 Processing /data/data/com.termux/files/home/nawah-nft-test ---
 No uncommitted changes
-Pulled latest changes from origin/main
-Running release_only.sh (if present)
-release_only.sh error: From github.com:nawahtkui/nawah-nft-test
- * branch            main       -> FETCH_HEAD
-fatal: tag 'v0.0.4' already exists
-Created and pushed tag: v0.0.5
+Pulled origin/main successfully
+Running release_only.sh
+release_only.sh executed
+>>> Working in repo: /data/data/com.termux/files/home/nawah-nft-test
+Already up to date.
+Installing dependencies...
+
+up to date, audited 1 package in 2s
+
+found 0 vulnerabilities
+Running src scripts...
+New release tag: v0.0.6
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+No changes to commit
+Release v0.0.6 created successfully!
+Supabase URL or API KEY not found. Skipping upload.
+Created & pushed tag: v0.0.7
+Finished /data/data/com.termux/files/home/nawah-nft-test
 
